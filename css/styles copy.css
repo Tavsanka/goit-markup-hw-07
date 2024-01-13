@@ -852,3 +852,33 @@ body {
 .frame {
   margin-left: 16px;
 }
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* ================================================= MOBILE 👇 ========================================= */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header-position > .nav .nav-menu {
+    display: none;
+  }
+}
+
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .nav-menu {
+    display: none;
+  }
+}
+/* ================================================= NOT DESKTOP 👇 ========================================= */
+@media screen and (max-width: 1157px) {
+  .icon-features {
+    display: none;
+  }
+}
+/* ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1158px) {
+}
