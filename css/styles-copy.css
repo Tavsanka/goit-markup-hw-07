@@ -853,6 +853,8 @@ body {
   margin-left: 16px;
 }
 
+<!-- Stary plik css -->
+<-- <link href="css/styles.css" rel="stylesheet" /> -->
 /* ================================================= MOBILE 👇 ========================================= */
 
 @media (min-width: 480px) and (max-width: 767px) {
