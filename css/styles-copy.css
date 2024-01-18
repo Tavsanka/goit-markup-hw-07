@@ -1049,9 +1049,7 @@ body {
   .header-list {
     text-align: left;
   }
-  .section-tree {
-    display: block;
-  }
+
   .section-list-style {
     flex-basis: calc(50% -24px);
   }
@@ -1081,13 +1079,6 @@ body {
     align-items: center;
     gap: 16px;
   }
-
-  .form-container {
-    display: flex;
-    flex-direction: row;
-
-    gap: 24px;
-  }
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
@@ -1110,6 +1101,9 @@ body {
   }
   .layered-background {
     padding: 188px 0;
+  }
+  .section-tree {
+    display: block;
   }
   .mobile-menu-layout {
     display: none;
