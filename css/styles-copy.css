@@ -68,11 +68,14 @@ img {
 .nav-menu {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: 40px;
   align-items: center;
 }
 
 .nav-menu-link {
+  font-size: 16px;
+  font-weight: 500;
   color: var(--color-navyblue);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -317,10 +320,8 @@ body {
 .section-list-style {
   display: flex;
   flex-direction: column;
-
   max-width: 428px;
   background-color: var(--color-white);
-  flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -475,8 +476,7 @@ body {
 }
 
 .logo-icon {
-  flex-basis: calc((100% - 120px) / 2);
-  width: calc((100% - 120px) / 6);
+  width: 168px;
   height: 88px;
 }
 
@@ -513,7 +513,8 @@ body {
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px;
+  row-gap: 72px;
+  column-gap: 24px;
   padding: 0 15px;
   margin: 0 auto;
   max-width: 480px;
@@ -1027,6 +1028,7 @@ body {
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) {
   .header-position {
+    min-width: 768px;
     display: flex;
   }
   .mobile-menu-layout {
@@ -1049,12 +1051,21 @@ body {
   .header-list {
     text-align: left;
   }
+  .address-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu-address {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 12px;
+  }
 
   .section-list-style {
-    flex-basis: calc(50% -24px);
+    flex-basis: unset;
   }
   .logo-icon {
-    flex-basis: calc((100% - 120px) / 3);
+    flex-basis: unset;
   }
   .logo-footer {
     text-align: left;
@@ -1065,19 +1076,19 @@ body {
   .subscribe {
     text-align: left;
   }
-  .label-email {
-    text-align: left;
-    display: flex;
-  }
   .footer-position {
-    max-width: 1158px;
+    max-width: 768px;
     justify-content: left;
+    padding-left: 108px;
   }
   .form-subscribe {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+  }
+  .social-media-wrapper {
+    padding-left: ;
   }
 }
 
@@ -1098,6 +1109,12 @@ body {
   }
   .header-list {
     font-size: 20px;
+  }
+
+  .nav-menu-address {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
   }
   .layered-background {
     padding: 188px 0;
@@ -1120,10 +1137,15 @@ body {
     border-radius: 4px;
     margin-bottom: 8px;
   }
-  .form-container {
-    margin-left: 80px;
-  }
+
   .footer-logo-wrapper {
     margin-right: 120px;
+  }
+  .footer-position {
+    display: flex;
+    align-items: baseline;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1158px;
   }
 }
