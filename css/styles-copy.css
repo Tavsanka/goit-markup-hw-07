@@ -75,7 +75,7 @@ img {
 
 .nav-menu-link {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--color-navyblue);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1059,6 +1059,7 @@ body {
   }
   .nav-menu-link {
     font-size: 16px;
+    font-weight: 500;
   }
   .address-contact {
     display: flex;
